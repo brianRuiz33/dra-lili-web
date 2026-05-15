@@ -1,0 +1,249 @@
+/* ============================================================
+   DRA. LILI NIETO — Design System Tokens
+   Source: Official Brandbook (2024)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@800&display=swap');
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* ============================================================
+   BRAND COLORS
+   ============================================================ */
+:root {
+  /* Brand palette */
+  --color-ametista:   #BD71FF; /* Primary purple — Pantone P 2577 C */
+  --color-magnolia:   #F4F3FF; /* Near-white lavender — P 656 C */
+  --color-malva:      #D4B3FF; /* Mid-tint purple — P 263 C */
+  --color-azul:       #3EC4FF; /* Sky blue accent — P 298 C */
+  --color-gris:       #98A4AE; /* French gray — P 7543 C */
+  --color-sal:        #EAEAEA; /* Sea salt light gray — P 663 C */
+  --color-onix:       #575756; /* Dark charcoal — P 7540 C */
+
+  /* Tints and shades (derived, not in brandbook) */
+  --color-ametista-10: oklch(from #BD71FF l c h / 0.10);
+  --color-ametista-20: oklch(from #BD71FF l c h / 0.20);
+  --color-azul-10:    oklch(from #3EC4FF l c h / 0.10);
+  --color-malva-40:   #e8d6ff;
+  --color-onix-90:    #1e1e1e;
+
+  /* ============================================================
+     SEMANTIC COLOR ROLES
+     ============================================================ */
+
+  /* Backgrounds */
+  --bg-page:          #ffffff;
+  --bg-subtle:        var(--color-magnolia);     /* #F4F3FF */
+  --bg-muted:         var(--color-sal);          /* #EAEAEA */
+  --bg-brand:         var(--color-ametista);     /* #BD71FF */
+  --bg-brand-soft:    var(--color-malva);        /* #D4B3FF */
+  --bg-dark:          var(--color-onix);         /* #575756 */
+
+  /* Foreground / text */
+  --fg-primary:       var(--color-onix);         /* #575756 — body text */
+  --fg-secondary:     var(--color-gris);         /* #98A4AE — muted text */
+  --fg-on-brand:      #ffffff;                   /* text on purple bg */
+  --fg-heading:       #2a2a2a;                   /* slightly darker for max readability */
+  --fg-link:          var(--color-ametista);
+  --fg-link-hover:    #9c4ee0;
+
+  /* Borders */
+  --border-default:   var(--color-sal);          /* #EAEAEA */
+  --border-subtle:    #f0eeff;
+  --border-brand:     var(--color-malva);
+
+  /* Interactive / CTA */
+  --cta-bg:           var(--color-ametista);
+  --cta-bg-hover:     #a85ae8;
+  --cta-text:         #ffffff;
+  --cta-secondary-bg: var(--color-magnolia);
+  --cta-secondary-text: var(--color-ametista);
+
+  /* Status / accents */
+  --accent-blue:      var(--color-azul);         /* #3EC4FF */
+  --accent-success:   #6dd9a3;
+  --accent-warning:   #ffd97d;
+  --accent-error:     #ff7d7d;
+
+  /* ============================================================
+     TYPOGRAPHY
+     ============================================================ */
+
+  /* Font families */
+  --font-display:     'DM Sans', sans-serif;     /* ExtraBold 800 — headings */
+  --font-body:        'Quicksand', sans-serif;   /* Light 300 — paragraphs */
+  --font-ui:          'Quicksand', sans-serif;   /* Bold 700 — subheadings, buttons, labels */
+
+  /* Font weights */
+  --weight-display:   800;
+  --weight-body:      300;
+  --weight-ui:        600;
+  --weight-bold:      700;
+
+  /* Type scale (fluid-friendly) */
+  --text-xs:          0.75rem;    /* 12px */
+  --text-sm:          0.875rem;   /* 14px */
+  --text-base:        1rem;       /* 16px */
+  --text-md:          1.125rem;   /* 18px */
+  --text-lg:          1.25rem;    /* 20px */
+  --text-xl:          1.5rem;     /* 24px */
+  --text-2xl:         2rem;       /* 32px */
+  --text-3xl:         2.5rem;     /* 40px */
+  --text-4xl:         3.5rem;     /* 56px */
+  --text-5xl:         4.5rem;     /* 72px */
+
+  /* Line heights */
+  --leading-tight:    1.1;
+  --leading-snug:     1.3;
+  --leading-normal:   1.5;
+  --leading-relaxed:  1.65;
+
+  /* Letter spacing */
+  --tracking-tight:   -0.02em;
+  --tracking-normal:  0em;
+  --tracking-wide:    0.04em;
+  --tracking-wider:   0.08em;
+
+  /* ============================================================
+     SPACING
+     ============================================================ */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+  --space-32:  128px;
+
+  /* ============================================================
+     BORDER RADIUS
+     ============================================================ */
+  --radius-sm:     8px;
+  --radius-md:     12px;
+  --radius-lg:     20px;
+  --radius-xl:     28px;
+  --radius-pill:   9999px;
+  --radius-image:  16px;
+
+  /* ============================================================
+     SHADOWS & ELEVATION
+     ============================================================ */
+  --shadow-xs:   0 2px 8px rgba(189, 113, 255, 0.06);
+  --shadow-sm:   0 4px 16px rgba(189, 113, 255, 0.08);
+  --shadow-md:   0 4px 24px rgba(189, 113, 255, 0.10);
+  --shadow-lg:   0 8px 32px rgba(189, 113, 255, 0.14);
+  --shadow-xl:   0 16px 48px rgba(189, 113, 255, 0.18);
+  --shadow-hover: 0 8px 32px rgba(189, 113, 255, 0.18);
+  --shadow-card:  0 4px 24px rgba(87, 87, 86, 0.08);
+
+  /* ============================================================
+     TRANSITIONS
+     ============================================================ */
+  --transition-fast:    0.15s ease;
+  --transition-default: 0.2s ease;
+  --transition-slow:    0.35s ease;
+}
+
+/* ============================================================
+   SEMANTIC ELEMENT STYLES
+   ============================================================ */
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-display);
+  font-size: var(--text-4xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-heading);
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-display);
+  font-size: var(--text-3xl);
+  line-height: var(--leading-tight);
+  color: var(--fg-heading);
+}
+
+h3, .h3 {
+  font-family: var(--font-ui);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-xl);
+  line-height: var(--leading-snug);
+  color: var(--fg-heading);
+}
+
+h4, .h4 {
+  font-family: var(--font-ui);
+  font-weight: var(--weight-ui);
+  font-size: var(--text-lg);
+  line-height: var(--leading-snug);
+  color: var(--fg-heading);
+}
+
+p, .body {
+  font-family: var(--font-body);
+  font-weight: var(--weight-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--fg-primary);
+}
+
+.label, label {
+  font-family: var(--font-ui);
+  font-weight: var(--weight-ui);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  color: var(--fg-secondary);
+}
+
+.caption {
+  font-family: var(--font-body);
+  font-weight: var(--weight-body);
+  font-size: var(--text-xs);
+  color: var(--fg-secondary);
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: var(--weight-display);
+  font-size: var(--text-5xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+a {
+  color: var(--fg-link);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+a:hover {
+  color: var(--fg-link-hover);
+}
+
+/* ============================================================
+   BASE RESETS
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--weight-body);
+  color: var(--fg-primary);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  text-wrap: pretty;
+}

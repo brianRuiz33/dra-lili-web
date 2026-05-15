@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dra. Lili Nieto — Ortodoncia en San Luis Potosí</title>
+    <meta
+      name="description"
+      content="Ortodoncia y ortopedia maxilofacial en San Luis Potosí. Brackets, Invisalign, ortopedia y más con la Dra. Lili Nieto."
+    />
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  </head>
+  <body>
+    <!-- ─────────── NAV ─────────── -->
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a href="#inicio" aria-label="Inicio">
+          <img
+            class="nav-logo"
+            src="assets/logo-horizontal-ametista.png"
+            alt="Dra. Lili Nieto"
+          />
+        </a>
+        <nav class="nav-links" aria-label="Principal">
+          <a href="#inicio" class="nav-link" data-section="inicio">Inicio</a>
+          <a href="#tratamientos" class="nav-link" data-section="tratamientos"
+            >Tratamientos</a
+          >
+          <a href="#acerca" class="nav-link" data-section="acerca">Acerca</a>
+          <a href="#ubicacion" class="nav-link" data-section="ubicacion"
+            >Ubicación</a
+          >
+          <a href="#contacto" class="nav-cta">Agendar cita</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <i data-lucide="menu" style="width: 22px; height: 22px"></i>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#inicio">Inicio</a>
+        <a href="#tratamientos">Tratamientos</a>
+        <a href="#acerca">Acerca de la doctora</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="btn btn-primary">Agendar cita</a>
+      </div>
+    </header>
+
+    <!-- ─────────── HERO ─────────── -->
+    <section class="hero" id="inicio" data-screen-label="01 Inicio">
+      <span class="hero-orb a" aria-hidden="true"></span>
+      <span class="hero-orb b" aria-hidden="true"></span>
+      <div class="wrap hero-inner">
+        <div class="hero-content reveal">
+          <h1 class="hero-title">La sonrisa<br />que <em>mereces</em>.</h1>
+          <p class="hero-sub">
+            Ortodoncia y ortopedia maxilofacial personalizada para cada etapa de
+            la vida. Acompañamiento humano, tecnología actual y un plan a la
+            medida de tu caso.
+          </p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary">
+              <i
+                data-lucide="calendar-heart"
+                style="width: 18px; height: 18px"
+              ></i>
+              Agenda tu valoración
+            </a>
+            <a href="#tratamientos" class="btn btn-ghost">
+              Ver tratamientos
+              <i data-lucide="arrow-down" style="width: 16px; height: 16px"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="pin-grid" aria-label="Sonrisas de nuestros pacientes">
+            <div class="pin" style="--ar: 3/4; --d: 0s">
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #c98aff, #9c4ee0);
+                  color: #fff;
+                  animation-delay: 0s;
+                "
+                ><i data-lucide="smile"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #74d6ff, #3ec4ff);
+                  color: #fff;
+                  animation-delay: -3s;
+                "
+                ><i data-lucide="heart"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #fff, #f4f3ff);
+                  color: var(--color-ametista);
+                  animation-delay: -6s;
+                "
+                ><i data-lucide="sparkles"></i
+              ></span>
+            </div>
+            <div class="pin" style="--ar: 1/1; --d: -0.6s">
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #e0c2ff, #b67bff);
+                  color: #fff;
+                  animation-delay: 0s;
+                "
+                ><i data-lucide="smile"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #fff, #f4f3ff);
+                  color: var(--color-ametista);
+                  animation-delay: -3s;
+                "
+                ><i data-lucide="smile"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #c98aff, #9c4ee0);
+                  color: #fff;
+                  animation-delay: -6s;
+                "
+                ><i data-lucide="star"></i
+              ></span>
+            </div>
+            <div class="pin" style="--ar: 3/4; --d: -1.2s">
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #74d6ff, #3ec4ff);
+                  color: #fff;
+                  animation-delay: 0s;
+                "
+                ><i data-lucide="smile"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #c98aff, #9c4ee0);
+                  color: #fff;
+                  animation-delay: -3s;
+                "
+                ><i data-lucide="heart"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #e0c2ff, #b67bff);
+                  color: #fff;
+                  animation-delay: -6s;
+                "
+                ><i data-lucide="smile"></i
+              ></span>
+            </div>
+            <div class="pin" style="--ar: 4/5; --d: -1.8s">
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #fff, #f4f3ff);
+                  color: var(--color-ametista);
+                  animation-delay: 0s;
+                "
+                ><i data-lucide="smile"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #c98aff, #9c4ee0);
+                  color: #fff;
+                  animation-delay: -3s;
+                "
+                ><i data-lucide="sparkles"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #74d6ff, #3ec4ff);
+                  color: #fff;
+                  animation-delay: -6s;
+                "
+                ><i data-lucide="smile"></i
+              ></span>
+            </div>
+            <div class="pin" style="--ar: 1/1; --d: -2.4s">
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #e0c2ff, #b67bff);
+                  color: #fff;
+                  animation-delay: 0s;
+                "
+                ><i data-lucide="heart"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #c98aff, #9c4ee0);
+                  color: #fff;
+                  animation-delay: -3s;
+                "
+                ><i data-lucide="smile"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #74d6ff, #3ec4ff);
+                  color: #fff;
+                  animation-delay: -6s;
+                "
+                ><i data-lucide="star"></i
+              ></span>
+            </div>
+            <div class="pin" style="--ar: 3/5; --d: -3s">
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #c98aff, #9c4ee0);
+                  color: #fff;
+                  animation-delay: 0s;
+                "
+                ><i data-lucide="smile"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #fff, #f4f3ff);
+                  color: var(--color-ametista);
+                  animation-delay: -3s;
+                "
+                ><i data-lucide="smile"></i
+              ></span>
+              <span
+                class="pin-slide"
+                style="
+                  --bg: linear-gradient(135deg, #e0c2ff, #b67bff);
+                  color: #fff;
+                  animation-delay: -6s;
+                "
+                ><i data-lucide="heart"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────── TRATAMIENTOS ─────────── -->
+    <section class="tx" id="tratamientos" data-screen-label="02 Tratamientos">
+      <div class="wrap">
+        <div class="tx-head reveal">
+          <div>
+            <span class="eyebrow">Tratamientos</span>
+            <h2 class="h-display">
+              Cuidado <em>completo</em><br />para tu sonrisa
+            </h2>
+          </div>
+          <p class="lead">
+            Desde la primera valoración hasta el seguimiento posterior, contamos
+            con opciones para corregir, alinear y proteger tu mordida — cómodas,
+            estéticas y efectivas.
+          </p>
+        </div>
+
+        <div class="tx-grid">
+          <!-- Brackets Convencionales -->
+          <article class="tx-card reveal">
+            <span class="tx-icon"
+              ><i
+                data-lucide="grip-horizontal"
+                style="width: 24px; height: 24px"
+              ></i
+            ></span>
+            <h3 class="tx-name">Brackets Convencionales</h3>
+            <p class="tx-desc">
+              Brackets metálicos clásicos: la opción más completa y económica
+              para corregir cualquier tipo de maloclusión con resultados
+              duraderos.
+            </p>
+            <span class="tx-label">Más popular</span>
+          </article>
+
+          <!-- Brackets Autoligado -->
+          <article class="tx-card reveal" data-accent="blue">
+            <span class="tx-icon"
+              ><i data-lucide="zap" style="width: 24px; height: 24px"></i
+            ></span>
+            <h3 class="tx-name">Brackets Autoligado</h3>
+            <p class="tx-desc">
+              Sistema de baja fricción que reduce molestias y tiempo de
+              tratamiento. Visitas más espaciadas y mayor confort día a día.
+            </p>
+            <span class="tx-label">Avanzado</span>
+          </article>
+
+          <!-- Brackets Estéticos -->
+          <article class="tx-card reveal">
+            <span class="tx-icon"
+              ><i data-lucide="gem" style="width: 24px; height: 24px"></i
+            ></span>
+            <h3 class="tx-name">Brackets Estéticos</h3>
+            <p class="tx-desc">
+              Cerámica o zafiro que se mimetizan con el color natural del
+              diente. Eficacia clínica con un acabado mucho más discreto.
+            </p>
+            <span class="tx-label">Discreto</span>
+          </article>
+
+          <!-- Alineadores Invisalign -->
+          <article class="tx-card reveal">
+            <span class="tx-icon"
+              ><i data-lucide="sparkles" style="width: 24px; height: 24px"></i
+            ></span>
+            <h3 class="tx-name">Alineadores Invisalign</h3>
+            <p class="tx-desc">
+              Alineadores transparentes y removibles, hechos a tu medida. La
+              opción más cómoda para alinear tus dientes sin que nadie lo note.
+            </p>
+            <span class="tx-label">Invisible</span>
+          </article>
+
+          <!-- Ortopedia -->
+          <article class="tx-card reveal" data-accent="blue">
+            <span class="tx-icon"
+              ><i data-lucide="baby" style="width: 24px; height: 24px"></i
+            ></span>
+            <h3 class="tx-name">Ortopedia</h3>
+            <p class="tx-desc">
+              Guía el crecimiento de los maxilares en niños y adolescentes para
+              prevenir tratamientos más complejos en el futuro.
+            </p>
+            <span class="tx-label">Para niños</span>
+          </article>
+
+          <!-- Guarda oclusal -->
+          <article class="tx-card reveal" data-accent="dark">
+            <span class="tx-icon"
+              ><i data-lucide="shield" style="width: 24px; height: 24px"></i
+            ></span>
+            <h3 class="tx-name">Guarda oclusal</h3>
+            <p class="tx-desc">
+              Protege tus dientes del bruxismo y rechinar nocturno. Hecha a la
+              medida para máximo confort y durabilidad.
+            </p>
+            <span class="tx-label">Protección</span>
+          </article>
+
+          <!-- Limpieza dental -->
+          <article class="tx-card reveal" data-accent="dark">
+            <span class="tx-icon"
+              ><i data-lucide="droplets" style="width: 24px; height: 24px"></i
+            ></span>
+            <h3 class="tx-name">Limpieza dental</h3>
+            <p class="tx-desc">
+              Profilaxis profesional para mantener tu sonrisa sana, libre de
+              sarro y con un aliento fresco. Recomendada cada 6 meses.
+            </p>
+            <span class="tx-label">Preventivo</span>
+          </article>
+
+          <!-- Feature card (CTA) -->
+          <article class="tx-card feature reveal">
+            <div>
+              <span class="tx-icon"
+                ><i
+                  data-lucide="calendar-check"
+                  style="width: 24px; height: 24px"
+                ></i
+              ></span>
+              <h3 class="tx-name" style="margin-top: 14px">
+                ¿No sabes cuál elegir?
+              </h3>
+              <p class="tx-desc">
+                Agenda una valoración y diseñamos un plan personalizado para tu
+                caso. Sin compromiso.
+              </p>
+            </div>
+            <a
+              href="#contacto"
+              class="btn btn-dark"
+              style="
+                background: #fff;
+                color: var(--color-ametista);
+                align-self: flex-start;
+                margin-top: 14px;
+              "
+            >
+              Agendar valoración
+              <i
+                data-lucide="arrow-right"
+                style="width: 16px; height: 16px"
+              ></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────── ACERCA ─────────── -->
+    <section class="about" id="acerca" data-screen-label="03 Acerca">
+      <div class="wrap about-grid">
+        <div class="about-media reveal">
+          <div class="about-img">
+            <div
+              class="hero-photo-placeholder"
+              aria-label="Foto de la doctora (próximamente)"
+            >
+              <i data-lucide="user" style="width: 64px; height: 64px"></i>
+              <span>Foto de la doctora</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <span class="eyebrow">Acerca de la doctora</span>
+          <h2 class="h-display">Dra. <em>Lili Nieto</em></h2>
+          <div class="about-pills">
+            <span class="about-pill"
+              ><i data-lucide="check" style="width: 12px; height: 12px"></i
+              >Especialista en Ortodoncia</span
+            >
+            <span class="about-pill"
+              ><i data-lucide="check" style="width: 12px; height: 12px"></i>+10
+              años de experiencia</span
+            >
+            <span class="about-pill"
+              ><i data-lucide="check" style="width: 12px; height: 12px"></i
+              >Adultos y niños</span
+            >
+          </div>
+          <p class="about-bio">
+            La Dra. Lili Nieto se especializa en ortodoncia y ortopedia
+            maxilofacial. Su enfoque combina precisión clínica con un trato
+            cercano para acompañar a cada paciente a lo largo de todo su
+            tratamiento. Cree en planes claros, comunicación honesta y
+            resultados que mejoran no solo la sonrisa, sino la salud y la
+            confianza de quien la visita.
+          </p>
+
+          <div class="studies-title">Formación y estudios</div>
+          <ul class="studies">
+            <li class="study">
+              <span class="study-ic"
+                ><i
+                  data-lucide="graduation-cap"
+                  style="width: 16px; height: 16px"
+                ></i
+              ></span>
+              <div class="study-text">
+                <strong>Cirujano Dentista</strong>
+                <small>Universidad Autónoma de San Luis Potosí</small>
+              </div>
+            </li>
+            <li class="study">
+              <span class="study-ic"
+                ><i
+                  data-lucide="book-open"
+                  style="width: 16px; height: 16px"
+                ></i
+              ></span>
+              <div class="study-text">
+                <strong
+                  >Especialidad en Ortodoncia y Ortopedia Maxilofacial</strong
+                >
+                <small>Posgrado clínico — Diplomado de tres años</small>
+              </div>
+            </li>
+            <li class="study">
+              <span class="study-ic"
+                ><i
+                  data-lucide="badge-check"
+                  style="width: 16px; height: 16px"
+                ></i
+              ></span>
+              <div class="study-text">
+                <strong>Certificación Invisalign Provider</strong>
+                <small>Align Technology</small>
+              </div>
+            </li>
+            <li class="study">
+              <span class="study-ic"
+                ><i data-lucide="award" style="width: 16px; height: 16px"></i
+              ></span>
+              <div class="study-text">
+                <strong>Diplomado en Ortodoncia Infantil y Ortopedia</strong>
+                <small>Educación continua</small>
+              </div>
+            </li>
+            <li class="study">
+              <span class="study-ic"
+                ><i data-lucide="users" style="width: 16px; height: 16px"></i
+              ></span>
+              <div class="study-text">
+                <strong>Miembro activo</strong>
+                <small>Asociación Mexicana de Ortodoncia</small>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#contacto" class="btn btn-primary">
+            <i
+              data-lucide="calendar-heart"
+              style="width: 18px; height: 18px"
+            ></i>
+            Agendar consulta
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────── UBICACIÓN ─────────── -->
+    <section class="loc" id="ubicacion" data-screen-label="04 Ubicación">
+      <div class="wrap">
+        <div class="tx-head reveal">
+          <div>
+            <span class="eyebrow">Ubicación</span>
+            <h2 class="h-display">Visítanos en <em>Lomas del Tec</em></h2>
+          </div>
+          <p class="lead">
+            Un espacio pensado para que te sientas cómoda y en confianza. Con
+            estacionamiento, fácil acceso y equipo de última generación.
+          </p>
+        </div>
+
+        <div class="loc-photos reveal">
+          <div class="loc-photo">
+            <img
+              src="assets/photo-clinic.jpeg"
+              alt="Consultorio Dra. Lili Nieto"
+            />
+          </div>
+          <div class="loc-photo placeholder">
+            <i data-lucide="image" style="width: 28px; height: 28px"></i>
+            <span>Sala de espera</span>
+          </div>
+          <div class="loc-photo placeholder">
+            <i data-lucide="image" style="width: 28px; height: 28px"></i>
+            <span>Área clínica</span>
+          </div>
+          <div class="loc-photo placeholder">
+            <i data-lucide="image" style="width: 28px; height: 28px"></i>
+            <span>Detalle</span>
+          </div>
+        </div>
+
+        <div class="loc-card reveal">
+          <div>
+            <div class="loc-addr-head">
+              <span class="loc-addr-ic"
+                ><i data-lucide="map-pin" style="width: 20px; height: 20px"></i
+              ></span>
+              <div>
+                <div class="loc-addr-eyebrow">Dirección</div>
+                <div class="loc-addr-title">Consultorio Eugenio</div>
+              </div>
+            </div>
+            <p class="loc-addr-text">
+              Av. Eugenio Garza Sada 155-L 11<br />
+              Lomas del Tecnológico, 78215<br />
+              San Luis Potosí, S.L.P.
+            </p>
+            <div class="loc-cta">
+              <a
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener"
+                href="https://www.google.com/maps/dir/?api=1&destination=Av.+Eugenio+Garza+Sada+155+Lomas+del+Tecnologico+San+Luis+Potosi"
+              >
+                <i
+                  data-lucide="navigation"
+                  style="width: 18px; height: 18px"
+                ></i>
+                Abrir indicaciones en Google Maps
+              </a>
+              <a class="btn btn-ghost" href="tel:4442195371">
+                <i data-lucide="phone" style="width: 16px; height: 16px"></i>
+                Llamar
+              </a>
+            </div>
+          </div>
+          <div class="loc-map">
+            <iframe
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Av.+Eugenio+Garza+Sada+155+Lomas+del+Tecnologico+San+Luis+Potosi&output=embed"
+              title="Mapa del consultorio"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────── CONTACTO ─────────── -->
+    <section class="contact" id="contacto" data-screen-label="05 Contacto">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div class="reveal">
+            <span class="eyebrow">Contacto</span>
+            <h2 class="h-display">Hablemos de <em>tu sonrisa</em></h2>
+            <p class="lead" style="margin-top: 14px">
+              ¿Tienes una consulta, una opinión o una sugerencia? Nos encantará
+              escucharte. Responderemos en menos de 24 horas hábiles.
+            </p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <span class="contact-ic"
+                  ><i
+                    data-lucide="map-pin"
+                    style="width: 18px; height: 18px"
+                  ></i
+                ></span>
+                <div>
+                  <div class="contact-label">Dirección</div>
+                  <div class="contact-val">
+                    Av. Eugenio Garza Sada 155-L 11<br />
+                    Lomas del Tecnológico, 78215<br />
+                    San Luis Potosí, S.L.P.
+                  </div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-ic"
+                  ><i data-lucide="phone" style="width: 18px; height: 18px"></i
+                ></span>
+                <div>
+                  <div class="contact-label">Teléfono</div>
+                  <div class="contact-val">
+                    <a href="tel:4442195371">444 219 5371</a>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-ic"
+                  ><i data-lucide="mail" style="width: 18px; height: 18px"></i
+                ></span>
+                <div>
+                  <div class="contact-label">Correo</div>
+                  <div class="contact-val">
+                    <a href="mailto:drlilinieto@gmail.com"
+                      >drlilinieto@gmail.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-ic"
+                  ><i data-lucide="clock" style="width: 18px; height: 18px"></i
+                ></span>
+                <div>
+                  <div class="contact-label">Horario</div>
+                  <div class="contact-val">
+                    Lun–Vie: 9:00 – 19:00<br />
+                    Sáb: 9:00 – 14:00
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card reveal">
+            <div class="form-head">
+              <h3 class="form-title">Envíanos un mensaje</h3>
+              <p class="form-sub">
+                Comparte una opinión, una queja o una consulta. Todos los
+                mensajes los lee directamente nuestro equipo.
+              </p>
+            </div>
+
+            <div class="form-success" id="formSuccess">
+              <i
+                data-lucide="check-circle-2"
+                style="width: 18px; height: 18px"
+              ></i>
+              <span
+                >¡Gracias! Recibimos tu mensaje y te contactaremos pronto.</span
+              >
+            </div>
+
+            <form class="form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="f-name"
+                    >Nombre<span class="field-required">*</span></label
+                  >
+                  <input
+                    class="input"
+                    id="f-name"
+                    name="name"
+                    type="text"
+                    placeholder="Tu nombre"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="f-phone"
+                    >Teléfono<span class="field-required">*</span></label
+                  >
+                  <input
+                    class="input"
+                    id="f-phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="444 000 0000"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label for="f-email"
+                  >Email<span class="field-required">*</span></label
+                >
+                <input
+                  class="input"
+                  id="f-email"
+                  name="email"
+                  type="email"
+                  placeholder="tu@correo.com"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="f-reason"
+                  >Razón de contacto<span class="field-required">*</span></label
+                >
+                <select class="select" id="f-reason" name="reason" required>
+                  <option value="">Selecciona una opción</option>
+                  <option>Quiero agendar una cita</option>
+                  <option>Consulta sobre un tratamiento</option>
+                  <option>Opinión / sugerencia</option>
+                  <option>Queja o reclamo</option>
+                  <option>Cotización</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-message"
+                  >Mensaje<span class="field-required">*</span></label
+                >
+                <textarea
+                  class="textarea"
+                  id="f-message"
+                  name="message"
+                  placeholder="Cuéntanos lo que tienes en mente..."
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn-primary form-submit" type="submit">
+                <i data-lucide="send" style="width: 16px; height: 16px"></i>
+                Enviar mensaje
+              </button>
+              <div class="form-note">
+                Al enviar este formulario aceptas que te contactemos por los
+                medios proporcionados.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────── FOOTER ─────────── -->
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <p>
+              Ortodoncia y ortopedia maxilofacial en San Luis Potosí.
+              Transformamos sonrisas con calidez, ciencia y un plan a la medida
+              de tu caso.
+            </p>
+            <div class="footer-social">
+              <a
+                class="social-btn"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook"
+              >
+                <i data-lucide="facebook" style="width: 18px; height: 18px"></i>
+              </a>
+              <a
+                class="social-btn"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+              >
+                <i
+                  data-lucide="instagram"
+                  style="width: 18px; height: 18px"
+                ></i>
+              </a>
+              <a
+                class="social-btn"
+                href="https://wa.me/524442195371"
+                target="_blank"
+                rel="noopener"
+                aria-label="WhatsApp"
+              >
+                <i
+                  data-lucide="message-circle"
+                  style="width: 18px; height: 18px"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-h">Tratamientos</div>
+            <a href="#tratamientos">Brackets Convencionales</a>
+            <a href="#tratamientos">Brackets Autoligado</a>
+            <a href="#tratamientos">Brackets Estéticos</a>
+            <a href="#tratamientos">Alineadores Invisalign</a>
+            <a href="#tratamientos">Ortopedia</a>
+            <a href="#tratamientos">Guarda oclusal</a>
+            <a href="#tratamientos">Limpieza dental</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-h">Contacto</div>
+            <a href="tel:4442195371">444 219 5371</a>
+            <a href="mailto:drlilinieto@gmail.com">drlilinieto@gmail.com</a>
+            <span>Av. Eugenio Garza Sada 155-L 11</span>
+            <span>Lomas del Tecnológico, 78215</span>
+            <span>San Luis Potosí, S.L.P.</span>
+            <span style="margin-top: 10px">Lun–Vie: 9:00 – 19:00</span>
+            <span>Sáb: 9:00 – 14:00</span>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-pay">
+            <span class="footer-pay-text"
+              >Aceptamos todos los métodos de pago</span
+            >
+            <div class="pay-logos" aria-label="Métodos de pago aceptados">
+              <span class="pay-logo pay-visa" title="Visa">
+                <svg
+                  viewBox="0 0 60 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <text
+                    x="30"
+                    y="16"
+                    text-anchor="middle"
+                    font-family="Arial, sans-serif"
+                    font-weight="900"
+                    font-style="italic"
+                    font-size="17"
+                    fill="#1A1F71"
+                    letter-spacing="-0.5"
+                  >
+                    VISA
+                  </text>
+                </svg>
+              </span>
+              <span class="pay-logo pay-mc" title="Mastercard">
+                <svg
+                  viewBox="0 0 38 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <circle cx="14" cy="12" r="9" fill="#EB001B" />
+                  <circle cx="24" cy="12" r="9" fill="#F79E1B" />
+                  <path
+                    d="M19 5.5a8.97 8.97 0 0 1 0 13 8.97 8.97 0 0 1 0-13z"
+                    fill="#FF5F00"
+                  />
+                </svg>
+              </span>
+              <span class="pay-logo pay-amex" title="American Express">
+                <svg
+                  viewBox="0 0 56 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <rect width="56" height="24" rx="3" fill="#2E77BB" />
+                  <text
+                    x="28"
+                    y="13"
+                    text-anchor="middle"
+                    font-family="Arial, sans-serif"
+                    font-weight="900"
+                    font-size="6.5"
+                    fill="#fff"
+                    letter-spacing="0.5"
+                  >
+                    AMERICAN
+                  </text>
+                  <text
+                    x="28"
+                    y="20"
+                    text-anchor="middle"
+                    font-family="Arial, sans-serif"
+                    font-weight="900"
+                    font-size="6.5"
+                    fill="#fff"
+                    letter-spacing="0.5"
+                  >
+                    EXPRESS
+                  </text>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <span class="footer-copy"
+            >© 2026 Dra. Lili Nieto Ortodoncia. Todos los derechos
+            reservados.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Icons
+      lucide.createIcons();
+
+      // Mobile menu
+      const navToggle = document.getElementById('navToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      navToggle.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        navToggle.innerHTML = open
+          ? '<i data-lucide="x" style="width:22px;height:22px"></i>'
+          : '<i data-lucide="menu" style="width:22px;height:22px"></i>';
+        lucide.createIcons();
+      });
+      mobileMenu.querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+          navToggle.innerHTML =
+            '<i data-lucide="menu" style="width:22px;height:22px"></i>';
+          lucide.createIcons();
+        });
+      });
+
+      // Active nav link on scroll
+      const sections = document.querySelectorAll('section[id]');
+      const links = document.querySelectorAll('.nav-link[data-section]');
+      const nav = document.querySelector('.nav');
+      const setActive = () => {
+        let current = '';
+        const y = window.scrollY + 120;
+        sections.forEach((s) => {
+          if (y >= s.offsetTop) current = s.id;
+        });
+        links.forEach((l) =>
+          l.classList.toggle('active', l.dataset.section === current),
+        );
+        nav.classList.toggle('is-scrolled', window.scrollY > 20);
+      };
+      window.addEventListener('scroll', setActive, { passive: true });
+      setActive();
+
+      // Reveal on scroll
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add('in');
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -40px 0px' },
+      );
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+      // Form
+      const form = document.getElementById('contactForm');
+      const successEl = document.getElementById('formSuccess');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const required = form.querySelectorAll('[required]');
+        let ok = true;
+        required.forEach((input) => {
+          if (!input.value.trim()) {
+            ok = false;
+            input.style.borderColor = 'var(--accent-error)';
+            input.style.boxShadow = '0 0 0 4px rgba(255,125,125,0.14)';
+            input.addEventListener('input', function clear() {
+              input.style.borderColor = '';
+              input.style.boxShadow = '';
+              input.removeEventListener('input', clear);
+            });
+          }
+        });
+        if (!ok) return;
+        successEl.classList.add('show');
+        form.reset();
+        lucide.createIcons();
+        setTimeout(() => successEl.classList.remove('show'), 6000);
+        successEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    </script>
+  </body>
+</html>
