@@ -21,7 +21,7 @@ Este documento es la hoja de ruta para llevar el sitio de "demo" a "producción 
 
 - [ ] Recibir foto de la doctora (silueta de torso, fondo transparente)
 - [ ] Recibir 4 fotos del consultorio (sala de espera, área clínica, recepción, detalle)
-- [ ] Recibir 6+ fotos de sonrisas de pacientes (con consentimiento firmado)
+- [x] Recibir 6+ fotos de sonrisas de pacientes (con consentimiento firmado)
 - [ ] Reemplazar placeholders en `index.html`:
   - `.about-img` y `.hero-photo` (placeholder de doctora)
   - `.loc-photo.placeholder` (3 placeholders en Ubicación)
@@ -29,11 +29,11 @@ Este documento es la hoja de ruta para llevar el sitio de "demo" a "producción 
 
 ### 1.2 Textos reales
 
-- [ ] Validar con la doctora la bio en sección "Acerca"
-- [ ] Confirmar lista real de estudios y certificaciones
+- [x] Validar con la doctora la bio en sección "Acerca"
+- [x] Confirmar lista real de estudios y certificaciones
 - [ ] Revisar descripciones de cada tratamiento
-- [ ] Validar dirección, teléfono y correo
-- [ ] Definir si hay días festivos o vacaciones que mencionar en horario
+- [x] Validar dirección, teléfono y correo
+- [x] Definir si hay días festivos o vacaciones que mencionar en horario
 
 **Esfuerzo:** 1-2 sesiones de fotos + 1 sesión de revisión con la doctora
 
@@ -43,35 +43,23 @@ Este documento es la hoja de ruta para llevar el sitio de "demo" a "producción 
 
 Hoy el formulario solo muestra un mensaje de éxito sin enviar nada. Opciones:
 
-### Opción A — Formspree (recomendada, más simple)
+### Opción A — Formspree
 
 - Crear cuenta gratis en formspree.io
 - Cambiar `<form>` para apuntar al endpoint
 - Configurar correo destino: `drlilinieto@gmail.com`
 - Free tier: 50 envíos/mes (suficiente para empezar)
 
-### Opción B — EmailJS
-
-- Más control sobre la plantilla del correo
-- También gratis hasta 200 envíos/mes
-- Requiere un poquito más de configuración
-
-### Opción C — WhatsApp directo
-
-- Submit redirige a `wa.me/524442195371?text=...` con los datos del formulario
-- No envía correo, abre WhatsApp con mensaje pre-llenado
-- Ideal si la doctora prefiere ese canal
-
 ### Tareas
 
-- [ ] Decidir opción (A, B o C)
-- [ ] Configurar la cuenta y conectar
-- [ ] Agregar validación más estricta:
+- [x] Decidir opción (A, B o C)
+- [x] Configurar la cuenta y conectar
+- [x] Agregar validación más estricta:
   - Email con regex
   - Teléfono 10 dígitos mexicanos
-- [ ] Agregar **hCaptcha** o **honeypot** para evitar spam
-- [ ] Agregar checkbox de **consentimiento de privacidad** (obligatorio en México)
-- [ ] Probar envío real y confirmar que llega el correo
+- [x] Agregar **hCaptcha** o **honeypot** para evitar spam
+- [x] Agregar checkbox de **consentimiento de privacidad** (obligatorio en México)
+- [x] Probar envío real y confirmar que llega el correo
 
 **Esfuerzo:** 1-2 horas
 
@@ -81,15 +69,15 @@ Hoy el formulario solo muestra un mensaje de éxito sin enviar nada. Opciones:
 
 ### 3.1 Dominio
 
-- [ ] Comprar dominio. Sugerencias:
+- [x] Comprar dominio. Sugerencias:
   - `dralilinieto.mx` (~$200/año)
   - `dralilinieto.com` (~$250/año)
   - `liliortodoncia.mx`
-- [ ] Configurar DNS
+- [x] Configurar DNS
 
 ### 3.2 Hosting (recomendado: Vercel o Netlify)
 
-- [ ] Crear repositorio en GitHub
+- [x] Crear repositorio en GitHub
 - [ ] Conectar a Vercel/Netlify (deploy automático)
 - [ ] Configurar dominio personalizado
 - [ ] Verificar SSL automático (HTTPS)
@@ -97,8 +85,8 @@ Hoy el formulario solo muestra un mensaje de éxito sin enviar nada. Opciones:
 
 ### 3.3 Correo profesional
 
-- [ ] Crear `contacto@dralilinieto.mx` con Google Workspace o Zoho Mail
-- [ ] Usar ese correo como destinatario del formulario en lugar del Gmail personal
+- [x] Crear `contacto@dralilinieto.mx` con Google Workspace o Zoho Mail
+- [x] Usar ese correo como destinatario del formulario en lugar del Gmail personal
 
 **Esfuerzo:** 1 día (puede tomar 24h propagación DNS)
 
