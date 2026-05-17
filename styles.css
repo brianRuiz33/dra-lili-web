@@ -253,6 +253,7 @@ svg[data-lucide] { width: 18px; height: 18px; flex-shrink: 0; }
   column-gap: 12px;
 }
 @media (min-width: 520px) { .pin-grid { column-gap: 14px; } }
+@media (max-width: 899px) { .pin-grid .pin:nth-child(n+5) { display: none; } }
 @media (min-width: 900px) {
   .pin-grid {
     column-count: 3;
