@@ -230,11 +230,11 @@ svg[data-lucide] { width: 18px; height: 18px; flex-shrink: 0; }
 .hero-visual {
   position: relative;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 @media (min-width: 900px) {
   .hero-visual {
-    margin-top: -32px;
-    margin-bottom: -32px;
     align-self: stretch;
     max-height: 640px;
   }
