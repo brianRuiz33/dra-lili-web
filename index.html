@@ -379,12 +379,12 @@
         <div class="wrap about-grid">
           <div class="about-media reveal">
             <div class="about-img">
-              <div
-                class="hero-photo-placeholder"
-                aria-label="Foto de la doctora (próximamente)"
-              >
-                <i data-lucide="user"></i>
-                <span>Foto de la doctora</span>
+              <div class="hero-photo" aria-label="Foto de la doctora">
+                <img
+                  src="assets/draLili.webp"
+                  alt="Consultorio Dra. Lili Nieto"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -480,22 +480,31 @@
           <div class="loc-photos reveal">
             <div class="loc-photo">
               <img
-                src="assets/photo-clinic.jpeg"
+                src="assets/clinca00.webp"
                 alt="Consultorio Dra. Lili Nieto"
                 loading="lazy"
               />
             </div>
-            <div class="loc-photo placeholder">
-              <i data-lucide="image"></i>
-              <span>Sala de espera</span>
+            <div class="loc-photo">
+              <img
+                src="assets/clinca02.webp"
+                alt="Consultorio Dra. Lili Nieto"
+                loading="lazy"
+              />
             </div>
-            <div class="loc-photo placeholder">
-              <i data-lucide="image"></i>
-              <span>Área clínica</span>
+            <div class="loc-photo">
+              <img
+                src="assets/clinca01.webp"
+                alt="Consultorio Dra. Lili Nieto"
+                loading="lazy"
+              />
             </div>
-            <div class="loc-photo placeholder">
-              <i data-lucide="image"></i>
-              <span>Detalle</span>
+            <div class="loc-photo">
+              <img
+                src="assets/clinca03.webp"
+                alt="Consultorio Dra. Lili Nieto"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -632,7 +641,11 @@
                       placeholder="Tu nombre"
                       required
                     />
-                    <span class="field-error" id="err-name" aria-live="polite"></span>
+                    <span
+                      class="field-error"
+                      id="err-name"
+                      aria-live="polite"
+                    ></span>
                   </div>
                   <div class="field">
                     <label for="f-phone"
@@ -646,7 +659,11 @@
                       placeholder="444 000 0000"
                       required
                     />
-                    <span class="field-error" id="err-phone" aria-live="polite"></span>
+                    <span
+                      class="field-error"
+                      id="err-phone"
+                      aria-live="polite"
+                    ></span>
                   </div>
                 </div>
                 <div class="field">
@@ -661,7 +678,11 @@
                     placeholder="tu@correo.com"
                     required
                   />
-                  <span class="field-error" id="err-email" aria-live="polite"></span>
+                  <span
+                    class="field-error"
+                    id="err-email"
+                    aria-live="polite"
+                  ></span>
                 </div>
                 <div class="field">
                   <label for="f-reason"
@@ -678,7 +699,11 @@
                     <option>Cotización</option>
                     <option>Otro</option>
                   </select>
-                  <span class="field-error" id="err-reason" aria-live="polite"></span>
+                  <span
+                    class="field-error"
+                    id="err-reason"
+                    aria-live="polite"
+                  ></span>
                 </div>
                 <div class="field">
                   <label for="f-message"
@@ -691,7 +716,11 @@
                     placeholder="Cuéntanos lo que tienes en mente..."
                     required
                   ></textarea>
-                  <span class="field-error" id="err-message" aria-live="polite"></span>
+                  <span
+                    class="field-error"
+                    id="err-message"
+                    aria-live="polite"
+                  ></span>
                 </div>
                 <div class="form-honeypot" aria-hidden="true">
                   <label for="f-website">No llenar</label>
@@ -969,10 +998,14 @@
         field.classList.add('input--error');
         const errEl = document.getElementById('err-' + field.id.slice(2));
         if (errEl) errEl.textContent = msg;
-        field.addEventListener('input', () => {
-          field.classList.remove('input--error');
-          if (errEl) errEl.textContent = '';
-        }, { once: true });
+        field.addEventListener(
+          'input',
+          () => {
+            field.classList.remove('input--error');
+            if (errEl) errEl.textContent = '';
+          },
+          { once: true },
+        );
       }
 
       form.addEventListener('submit', async (e) => {
@@ -987,13 +1020,19 @@
           }
         });
 
-        if (emailField.value.trim() && !EMAIL_RE.test(emailField.value.trim())) {
+        if (
+          emailField.value.trim() &&
+          !EMAIL_RE.test(emailField.value.trim())
+        ) {
           ok = false;
           markError(emailField, 'Ingresa un correo electrónico válido');
         }
 
         const digits = phoneField.value.replace(/\D/g, '');
-        if (phoneField.value.trim() && (digits.length < 7 || digits.length > 10)) {
+        if (
+          phoneField.value.trim() &&
+          (digits.length < 7 || digits.length > 10)
+        ) {
           ok = false;
           markError(phoneField, 'El teléfono debe tener entre 7 y 10 dígitos');
         }
